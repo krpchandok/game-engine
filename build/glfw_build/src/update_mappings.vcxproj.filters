@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\kirpa\Portfolio\life-engine\build\CMakeFiles\c1aa9b0c1e610d8052a359c88439883b\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\kirpa\Portfolio\life-engine\thirdparty\glfw-3.4\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\kirpa\Portfolio\life-engine\thirdparty\glfw-3.4\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\kirpa\Portfolio\life-engine\thirdparty\glfw-3.4\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\kirpa\Portfolio\life-engine\build\glfw_build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1110819A-181B-3229-9E5E-B608964498C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A9B09F8A-C9DB-30BD-B93A-4E1F4C381142}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

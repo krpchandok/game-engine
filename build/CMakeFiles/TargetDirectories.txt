@@ -1,0 +1,15 @@
+C:/Users/kirpa/Portfolio/life-engine/build/CMakeFiles/CozyGameEngineProject.dir
+C:/Users/kirpa/Portfolio/life-engine/build/CMakeFiles/INSTALL.dir
+C:/Users/kirpa/Portfolio/life-engine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/kirpa/Portfolio/life-engine/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/CMakeFiles/uninstall.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/CMakeFiles/INSTALL.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/CMakeFiles/ALL_BUILD.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/src/CMakeFiles/glfw.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/src/CMakeFiles/update_mappings.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/src/CMakeFiles/INSTALL.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/docs/CMakeFiles/INSTALL.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glew_build/CMakeFiles/glew.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glew_build/CMakeFiles/glew_s.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glew_build/CMakeFiles/INSTALL.dir
+C:/Users/kirpa/Portfolio/life-engine/build/glew_build/CMakeFiles/ALL_BUILD.dir
