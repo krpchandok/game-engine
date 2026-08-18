@@ -1,8 +1,7 @@
+#pragma once
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-
-// Converts world space to view space by generating view matrix
 
 enum Camera_Movement {
     FORWARD,
@@ -11,39 +10,43 @@ enum Camera_Movement {
     RIGHT
 };
 
+// default camera values
+const float YAW         = -90.0f;
+const float PITCH       =  0.0f;
+const float SPEED       =  2.5f;
+const float SENSITIVITY =  0.1f;
+const float ZOOM        =  45.0f;
+
 class Camera {
-    glm::vec3 position{0.0f};
-    glm::vec3 front{0.0f, 0.0f, -1.0f};
-    glm::vec3 up{0.0f, 1.0f, 0.0f};
-    glm::vec3 right{1.0f, 0.0f, 0.0f};
-    glm::vec3 worldUp{0.0f, 1.0f, 0.0f};
+public:
+    // camera attributes
+    glm::vec3 position;
+    glm::vec3 front;
+    glm::vec3 up;
+    glm::vec3 right;
+    glm::vec3 worldUp;
 
-    float yaw{-90.0f};
-    float pitch{0.0f};
+    // euler angles
+    float yaw;
+    float pitch;
 
-    float movementSpeed{2.5f};
-    float mouseSensitivity{0.1f};
-    float zoom{45.0f};
+    // camera options
+    float movementSpeed;
+    float mouseSensitivity;
+    float zoom;
 
-    public:
-        Camera() = default;
-        Camera(const glm::vec3& pos, const glm::vec3& upVec, float yawAngle, float pitchAngle);
+    Camera(const glm::vec3& pos = glm::vec3(0.0f, 0.0f, 3.0f),
+           const glm::vec3& upVec = glm::vec3(0.0f, 1.0f, 0.0f),
+           float yawAngle = YAW,
+           float pitchAngle = PITCH);
 
-        glm::mat4 getViewMatrix() const;
+    glm::mat4 getViewMatrix() const;
+    glm::mat4 getProjectionMatrix(float aspectRatio, float nearPlane = 0.1f, float farPlane = 100.0f) const;
 
-        void processKeyboard(Camera_Movement direction, float deltaTime);
-        void processMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
-        void processMouseScroll(float yoffset);
+    void processKeyboard(Camera_Movement direction, float deltaTime);
+    void processMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
+    void processMouseScroll(float yoffset);
 
-        const glm::vec3& getPosition() const;
-        const glm::vec3& getFront() const;
-        const glm::vec3& getUp() const;
-        const glm::vec3& getRight() const;
-        float getYaw() const;
-        float getPitch() const;
-        float getZoom() const;
-
-    private:
-        void updateCameraVectors();
+private:
+    void updateCameraVectors();
 };
-

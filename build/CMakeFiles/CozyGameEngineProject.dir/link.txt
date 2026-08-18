@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/CozyGameEngineProject.dir/src/main.cpp.o CMakeFiles/CozyGameEngineProject.dir/src/textures/stb/stb_image.cpp.o -o CozyGameEngineProject  glfw_build/src/libglfw3.a lib/libGLEW.a -framework Cocoa -framework IOKit -framework CoreFoundation -framework OpenGL

@@ -1,11 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/kirpa/Portfolio/life-engine/build/cmake_install.cmake",
-		"C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/cmake_install.cmake",
-		"C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/src/cmake_install.cmake",
-		"C:/Users/kirpa/Portfolio/life-engine/build/glfw_build/docs/cmake_install.cmake",
-		"C:/Users/kirpa/Portfolio/life-engine/build/glew_build/cmake_install.cmake"
+		"/Users/kirby/life-sim/build/cmake_install.cmake",
+		"/Users/kirby/life-sim/build/glfw_build/cmake_install.cmake",
+		"/Users/kirby/life-sim/build/glfw_build/src/cmake_install.cmake",
+		"/Users/kirby/life-sim/build/glfw_build/docs/cmake_install.cmake",
+		"/Users/kirby/life-sim/build/glew_build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

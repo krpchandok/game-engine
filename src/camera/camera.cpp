@@ -4,12 +4,17 @@
 #include <glm/gtc/type_ptr.hpp>
 
 Camera::Camera(const glm::vec3& pos, const glm::vec3& upVec, float yawAngle, float pitchAngle)
-    : position(pos), worldUp(upVec), yaw(yawAngle), pitch(pitchAngle) {
+    : position(pos), worldUp(upVec), yaw(yawAngle), pitch(pitchAngle),
+      movementSpeed(SPEED), mouseSensitivity(SENSITIVITY), zoom(ZOOM) {
     updateCameraVectors();
 }
 
 glm::mat4 Camera::getViewMatrix() const {
     return glm::lookAt(position, position + front, up);
+}
+
+glm::mat4 Camera::getProjectionMatrix(float aspectRatio, float nearPlane, float farPlane) const {
+    return glm::perspective(glm::radians(zoom), aspectRatio, nearPlane, farPlane);
 }
 
 void Camera::processKeyboard(Camera_Movement direction, float deltaTime) {
